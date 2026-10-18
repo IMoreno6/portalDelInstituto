@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	<h1 th:text="|Lotería de ${pais}|">Lotería de país</h1>
+	
+	<p>Combinación</p>
+	<p><strong th:each="numero: ${combinacion}" th:text="|${numero} |">7</strong></p>
+	
+	<br />
+	<a th:href="@{/loto/menu}">Volver al menú de lotería</a>
+</body>
+</html>

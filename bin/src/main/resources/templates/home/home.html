@@ -1,0 +1,13 @@
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}">Inicio</title>
+</head>
+<body>
+	<h1>Portal del instituto</h1>
+	<p>Bienvenido al portal del instituto. Desde aquí puedes probar
+		suerte con la lotería y consultar los libros de la biblioteca.</p>
+	<p><i th:text="${proverbio}">Un proverbio</i></p>
+	<a th:href="@{/loto/menu}">Ir a la lotería</a>
+</body>
+</html>
